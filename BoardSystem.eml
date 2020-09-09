@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.8" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jedis-2.9.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jedis-2.9.0.jar!/"/>
+	</lib>
+	<lib name="commons-pool2-2.4.2.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-pool2-2.4.2.jar!/"/>
+	</lib>
+	<lib name="commons-pool.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-pool.jar!/"/>
+	</lib>
+	<lib name="spring-data-commons-1.12.5.RELEASE.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-data-commons-1.12.5.RELEASE.jar!/"/>
+	</lib>
+	<lib name="spring-data-redis-1.6.2.RELEASE.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-data-redis-1.6.2.RELEASE.jar!/"/>
+	</lib>
+	<lib name="Tomcat 8.5.37" scope="PROVIDED"/>
+	<levels>
+		<level name="lib" value="project"/>
+		<level name="Tomcat 8.5.37" value="application_server_libraries"/>
+	</levels>
+</component>

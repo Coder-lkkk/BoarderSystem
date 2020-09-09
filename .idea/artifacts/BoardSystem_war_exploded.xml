@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BoardSystem:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BoardSystem_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BoardSystem" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="jedis-2.9.0.jar" module-name="BoardSystem" />
+          <element id="library" level="module" name="commons-pool2-2.4.2.jar" module-name="BoardSystem" />
+          <element id="library" level="module" name="commons-pool.jar" module-name="BoardSystem" />
+          <element id="library" level="module" name="spring-data-commons-1.12.5.RELEASE.jar" module-name="BoardSystem" />
+          <element id="library" level="module" name="spring-data-redis-1.6.2.RELEASE.jar" module-name="BoardSystem" />
+          <element id="library" level="module" name="junit4" module-name="BoardSystem" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="BoardSystem/web/Web" />
+    </root>
+  </artifact>
+</component>

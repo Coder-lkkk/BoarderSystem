@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.boardsystem.dao.BlogDao">
+	<resultMap id="BaseMap" type="com.boardsystem.po.Blog">
+		<id property="id" column="id" jdbcType="INTEGER" />
+		<result property="title" column="title" jdbcType="VARCHAR" />
+		<result property="type" column="type" jdbcType="VARCHAR" />
+		<result property="author" column="author" jdbcType="VARCHAR" />
+		<result property="vip" column="vip" jdbcType="INTEGER" />
+		<result property="date" column="date" jdbcType="VARCHAR" />
+		<result property="like" column="like" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="getTopList" resultMap="BaseMap">
+		select * from topBlog limit 0,5
+	</select>
+	
+	<select id="getById_Top" parameterType="Integer" resultType="Blog">
+		select * from topBlog where id = #{id}
+	</select>
+	
+	<select id="getById_SE" parameterType="Integer" resultType="Blog">
+		select * from javase where id = #{id}
+	</select>
+	
+	<select id="getCategoryList_SE" parameterType="String" resultType="Blog">
+		select * from javaSE limit 0,5
+	</select>
+	
+	<insert id="addBlog" parameterType="Blog" >
+		insert into javaSE(title,type,content)
+		values(#{title},#{type},#{content})
+	</insert>
+	
+</mapper>
